@@ -97,6 +97,11 @@ Example json retrieved if song is 2 column:
 }
 ```
 
+### Questions
+If anything is confusing feel free to add an issue in the issue tab to bring it to my concern,
+
+Thank you,
+
 ### Anasheed Description and Goal
 New and Old Anasheed: Written as text.
 
