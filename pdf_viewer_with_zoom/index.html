@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pdf Viewer</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .top-bar{
+                background: #333;
+                color:white;
+                padding: .3rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                box-shadow: 0 .5rem 1rem rgba(0,0,0,.2)!important;
+            }
+
+            .btn{
+                background: #333;
+                color:white;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                padding-right:.5rem;
+            }
+
+            .btn:hover{
+                opacity: .5;
+            }
+
+            .page-info{
+                margin-left:1rem;
+            }
+
+            .error{
+                background:orangered;
+                color:white;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+    <body style="background-color:#333;">
+        <div class="top-bar">
+            <button class="btn" onclick="changeScale(this.id)" id="zoom_in">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                   <circle cx="10" cy="10" r="7"></circle>
+                   <line x1="7" y1="10" x2="13" y2="10"></line>
+                   <line x1="10" y1="7" x2="10" y2="13"></line>
+                   <line x1="21" y1="21" x2="15" y2="15"></line>
+                </svg>
+            </button>
+            <button class="btn" onclick="changeScale(this.id)" id="zoom_out">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                   <circle cx="10" cy="10" r="7"></circle>
+                   <line x1="7" y1="10" x2="13" y2="10"></line>
+                   <line x1="21" y1="21" x2="15" y2="15"></line>
+                </svg>
+            </button>
+        </div>
+        <div id="pdf-viewer" style="display: flex;flex-direction: column">
+            
+        </div>
+        
+        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
