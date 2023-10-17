@@ -99,8 +99,8 @@ function check_i_with_cookie($i){
                 <div class="divider"></div>
             </li>
             <li><a href="../">Home</a></li>
-            <li><a href="../mylist">My List</a></li>
-            <li><a href="../contact">Contact</a></li>
+            <li><a href="mylist/">My List</a></li>
+            <li><a href="contact/">Contact</a></li>
         </ul>
     </header>
 
