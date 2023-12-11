@@ -1,7 +1,7 @@
 # Anasheed-Site
 
-## Anasheed APP for IOS Devices
-The official anasheed app can be found on the app store for free.
+## Anasheed APP for IOS Devices (Coming Soon)
+The official anasheed app is coming soon and is in the making.
 
 ## Anasheed APP for Android (Coming Soon)
 The official android app is coming soon and is in the making.
