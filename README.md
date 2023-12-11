@@ -26,7 +26,7 @@ The information is all returned as a string in json and will need to be parsed i
 either "1" or "2"
 
 ### Full Content List API
-For this api the base URL is **https://anasheed.biz/content.json**
+For this api the base URL is **https://anasheed.app/content.json**
 
 Make a request to the URL above and it will return all songs stored on the site:
 All content is rapped in a larger container with the main content separated by numbers and commas
@@ -53,7 +53,7 @@ Example json retrieved:
 
 
 ### Titles List API
-For this api the base URL is **https://anasheed.biz/titles.json**
+For this api the base URL is **https://anasheed.app/titles.json**
 
 Make a request to the URL above and it will return all titles of the songs stored on the site:
 All Songs returned will be in a json array
@@ -69,14 +69,14 @@ Example titles json retrieved:
 
 
 ### JSON Song Request API
-For this api the base URL is **https://anasheed.biz/requestSongapi.php?position=**
+For this api the base URL is **https://anasheed.app/requestSongapi.php?position=**
 
 The URL above accepts 1 query at a time
 
 Example:
 ```
 //position of song in the json object or array position in the title json
-https://anasheed.biz/requestSongapi.php?position=0
+https://anasheed.app/requestSongapi.php?position=0
 ```
 
 Example json retrieved if song is 1 column:
@@ -108,9 +108,9 @@ New and Old Anasheed: Written as text.
 Anasheed are very important in islamic culture and is usually only left as recordings and sounds and in memory.
 Thankfully, these anasheed won't be forgotten.
 
-The Beta of the Anasheed site can be found @ ~~Anasheed.cf~~ Anasheed.biz
+The Beta of the Anasheed site can be found @ ~~Anasheed.cf~~ Anasheed.app
 
-If you feel like there is a nasheed missing than pleaee let us know through the issue tab up above.
+If you feel like there is a nasheed missing than please let us know through the issue tab up above.
 Or email us through the site's contact us tab.
 
 If you are looking for a business plan for the use of these nasheeds, please contact us through the site's contact us tab

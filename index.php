@@ -6,7 +6,7 @@ $file = file_get_contents("content.json");
 //parse the file into an associative array aka be able to use names
 $songs_list = json_decode($file, true);
 
-//compares the i to the cokkie values 1 by one
+//compares the i to the cookie values 1 by one
 function check_i_with_cookie($i){
     if(isset($_COOKIE['loc'])){
         $cookie = explode(',', $_COOKIE['loc']);
@@ -178,7 +178,7 @@ function check_i_with_cookie($i){
                     <?php
                     
             for($i = count($songs_list) - 1; $i >= 0; $i--){
-                echo '<div class="col s12 m4 l3" style="text-align:center;margin-bottom:30px;"><iframe style="height:380px;" class="pdf-js-viewer-grid" src="/anasheed_V2/pdf_viewer_no_zoom/index.html?songnumber='. $i .'" title="webviewer" frameborder="0"></iframe><h6 style="font-weight:500;margin-bottom:10px;">'.$songs_list[$i].'</h6><a class="btn-flat waves-effect modal-trigger" style="background-color:#0376bc;color:white;margin:0px;" onclick=\'setSong("' . $i . '")\' href="#viewsong">View Song</a>';
+                echo '<div class="col s12 m4 l3" style="text-align:center;margin-bottom:30px;"><iframe style="height:380px;" class="pdf-js-viewer-grid" src="pdf_viewer_no_zoom/index.html?songnumber='. $i .'" title="webviewer" frameborder="0"></iframe><h6 style="font-weight:500;margin-bottom:10px;">'.$songs_list[$i].'</h6><a class="btn-flat waves-effect modal-trigger" style="background-color:#0376bc;color:white;margin:0px;" onclick=\'setSong("' . $i . '")\' href="#viewsong">View Song</a>';
                 
                        if(check_i_with_cookie($i)){             
                             echo "
